@@ -5,36 +5,51 @@ card grid of hobbies (w/ pictures, title, short description)
 something unique-->
 <!DOCTYPE html>
 <html>
-<div class="wrapper">
-<head>
-  <title>Thomas Giaimo</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<div id="sidebar">
-  <section class="links">
-    <a href="https://www.linkedin.com/in/thomas-giaimo-445893200/" target="_blank">
-      <img class="icon" src="linkedin.png" alt="linkedin logo">
-    </a>
-  </section>
-</div>
-<body>
-  <div id="content">
-    <section id="name"><h1>Thomas Giaimo</h1></section>
-    <section id="selfphoto">
-      <section id="desc">
-        <p>Freshman computer science major from Spartanburg, SC</p>
-        <img class="image" src="profile.jpg" alt="picture of myself">
-      </section>
-    </section>
-    <section id="dogphoto">
-      <img class="dogs" src="dogs/all1.jpg" alt="dog photos">
-    </section>
-    <section id = "buttons">
-      <button class="btn"> &lt; </button>
-      <button class="btn"> &gt; </button>
-      <script type="text/javascript" src="app.js"></script>
-    </section>
-  </div>
-</body>
-</div>
+  <header>
+    <title>Thomas Giaimo</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </header>
+  <body>
+    <div class="container">
+      <div class="body">
+        <div class="sidebar">
+          <a href="https://www.linkedin.com/in/thomas-giaimo-445893200/" target="_blank">
+            <img class="icon" src="linkedin.png" alt="linkedin logo">
+          </a>
+        </div>
+        <div class="content">
+          <div class="screen" id="one">
+            <h1>Thomas Giaimo</h1>
+            <p>Freshman computer science major from Spartanburg, SC</p>
+            <img class="image" src="profile.jpg" alt="picture of myself">
+          </div>
+          <div class="screen" id="two">
+            <div class="photo" id="photos">
+              <div class="middle" id="midleft">
+                <img class="dogs" src="dogs/all1.jpg" alt="dog photos">
+                <p id="description">Pictures of my dogs: Tux, Henry, and Holly</p>
+                <div class="button">
+                  <button class="btn"> &lt; </button>
+                  <button class="btn"> &gt; </button>
+                  <script type="text/javascript" src="app.js"></script>
+                </div>
+              </div>
+            </div>
+            <div id="cards">
+              <div class="middle" id="midright">
+                <div class="card">
+                  <img class="cardpic" src="twitch.jpg" alt="twitch logo">
+                  <div class="cont"><h2>Twitch.tv</h2><p>I enjoy watching Twitch.</p></div>
+                </div>
+                <div class="card">
+                  <img class="cardpic" src="run.jpg" alt="running image">
+                  <div class="cont"><h2>Running</h2><p>I also enjoy running.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
